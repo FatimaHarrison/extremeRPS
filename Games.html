@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS</title>
+    <link rel="stylesheet" href="Game assets/RPS.css">
+  </head>
+
+    
+  <header>
+      <h1>Welcome to the game of RPS by Fatima H.</h1>
+      <h2> Manual Instructions:</h2>
+  </header>
+    
+  <p> To begin the would need to or more players of your choice to be able to play.Set out a piece of    paper and write down each of the players name to help you you keep in track of the scorce.
+    After that's done one player would give a demistration on how the game works. The choosen player would show 3 figures that would be played in the game. The first figure would be in a fist for rock,the second figure would be a opened hand for paper, and the third would be a two fingers up for scissors.
+  </p>
+
+  <body>
+    <div>
+      <p id="directions-text"> To begin the game input your first response. RPS</p>
+      <p id="userchoice-text"></p>
+      <p id="computerchoice-text"></p>
+      <p id="wins-text"></p>
+      <p id="losses-text"></p>
+      <p id="ties-text"></p>
+    </div>
+    <script type="text/javascript">
+    alert("In this game of Rock Paper and Scissors you will be going agianst your computer. Both componients (you and the computer) will be using the letter keys to enter your response. Be sure to only use the following keys provided: (R for rock, P for paper, and S for Scissors). Keep in mind scorces will be in count and no your computer is not controlled. Have fun!")
+    
+
+    var computerChoices = ["r", "p", "s"];
+    var wins = 0;
+    var losses = 0;
+    var ties = 0;
+   
+    var directionsText = document.getElementById("directions-text");
+    var userChoiceText = document.getElementById("userchoice-text");
+    var computerChoiceText = document.getElementById("computerchoice-text");
+    var winsText = document.getElementById("wins-text");
+    var lossesText = document.getElementById("losses-text");
+    var tiesText = document.getElementById("ties-text");
+    document.onkeyup = function(event) {
+
+    var userGuess = event.key;
+
+    // Randomly chooses a choice from the options array. This is the Computer's guess.
+    var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+
+    // Only run the following code block if the user presses "r" or "p" or "s".
+    if ((userGuess === "r") || (userGuess === "p") || (userGuess === "s")) {
+
+      // If we choose rock and the computer guesses scissors, increment our wins variable.
+      if ((userGuess === "r") && (computerGuess === "s")) {
+        wins++;
+      }
+
+      // If we choose rock and the computer guesses paper, increment our losses variable.
+      if ((userGuess === "r") && (computerGuess === "p")) {
+        losses++;
+      }
+
+      // If we choose scissors and the computer guesses rock, increment our losses variable.
+      if ((userGuess === "s") && (computerGuess === "r")) {
+        losses++;
+      }
+
+      // If we choose scissors and the computer guesses paper, increment our wins variable.
+      if ((userGuess === "s") && (computerGuess === "p")) {
+        wins++;
+      }
+
+      // If we choose paper and the computer guesses rock, increment our wins variable.
+      if ((userGuess === "p") && (computerGuess === "r")) {
+        wins++;
+      }
+
+      // If we choose paper and the computer guesses scissors, increment our losses variable.
+      if ((userGuess === "p") && (computerGuess === "s")) {
+        losses++;
+      }
+
+      // If we choose the same thing as the computer, increment our ties variable.
+      if (userGuess === computerGuess) {
+        ties++;
+      }
+
+      // Hide the directions
+      directionsText.textContent = "";
+
+      // Display the user and computer guesses, and wins/losses/ties.
+      userChoiceText.textContent = "You chose: " + userGuess;
+      computerChoiceText.textContent = "The computer chose: " + computerGuess;
+      winsText.textContent = "wins: " + wins;
+      lossesText.textContent = "losses: " + losses;
+      tiesText.textContent = "ties: " + ties;
+       }
+      };
+</script>
+
+</body>
+
+</html>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
