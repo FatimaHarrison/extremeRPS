@@ -2,9 +2,9 @@ body{
     margin: auto;
     width: 25%;
     text-align: center;
-    background-color:lightblue;
     padding: 5px;
     border-radius: 25px;
+    background-color:lightblue;
    }
 
     h1{
