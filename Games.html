@@ -27,30 +27,30 @@
       <p id="losses-text"></p>
       <p id="ties-text"></p>
     </div>
-    <script type="text/javascript">
+   <script type="text/javascript">
     alert("In this game of Rock Paper and Scissors you will be going agianst your computer. Both componients (you and the computer) will be using the letter keys to enter your response. Be sure to only use the following keys provided: (R for rock, P for paper, and S for Scissors). Keep in mind scorces will be in count and no your computer is not controlled. Have fun!")
     
 
-    var computerChoices = ["r", "p", "s"];
-    var wins = 0;
-    var losses = 0;
-    var ties = 0;
+     var computerChoices = ["r", "p", "s"];
+     var wins = 0;
+     var losses = 0;
+     var ties = 0;
    
-    var directionsText = document.getElementById("directions-text");
-    var userChoiceText = document.getElementById("userchoice-text");
-    var computerChoiceText = document.getElementById("computerchoice-text");
-    var winsText = document.getElementById("wins-text");
-    var lossesText = document.getElementById("losses-text");
-    var tiesText = document.getElementById("ties-text");
-    document.onkeyup = function(event) {
+     var directionsText = document.getElementById("directions-text");
+     var userChoiceText = document.getElementById("userchoice-text");
+     var computerChoiceText = document.getElementById("computerchoice-text");
+     var winsText = document.getElementById("wins-text");
+     var lossesText = document.getElementById("losses-text");
+     var tiesText = document.getElementById("ties-text");
+     document.onkeyup = function(event) {
 
-    var userGuess = event.key;
+     var userGuess = event.key;
 
-    // Randomly chooses a choice from the options array. This is the Computer's guess.
-    var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+     // Randomly chooses a choice from the options array. This is the Computer's guess.
+     var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
-    // Only run the following code block if the user presses "r" or "p" or "s".
-    if ((userGuess === "r") || (userGuess === "p") || (userGuess === "s")) {
+     // Only run the following code block if the user presses "r" or "p" or "s".
+     if ((userGuess === "r") || (userGuess === "p") || (userGuess === "s")) {
 
       // If we choose rock and the computer guesses scissors, increment our wins variable.
       if ((userGuess === "r") && (computerGuess === "s")) {
@@ -130,5 +130,3 @@
 
 
 
-</body>
-</html>
