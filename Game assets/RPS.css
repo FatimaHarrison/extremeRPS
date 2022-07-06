@@ -2,20 +2,20 @@ body{
     margin: auto;
     width: 25%;
     text-align: center;
-    background-color:blue;
+    background-color:lightblue;
     padding: 5px;
     border-radius: 25px;
    }
 
     h1{
-        font-size: 19px;
+        font-size: 25px;
         font-family:'Times New Roman';
     }
 
     h2{
-        font-size: 17px;
+        font-size: 22px;
     }
 
     p{
-       font-size:10px ;
+       font-size: 21px ;
     }
