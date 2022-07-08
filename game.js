@@ -1,5 +1,5 @@
     <script type="text/javascript">
-    alert("In this game of Rock Paper and Scissors you will be going agianst your computer. Both componients (you and the computer) will be using the letter keys to enter your response. Be sure to only use the following keys provided: (R for rock, P for paper, and S for Scissors). Keep in mind scorces will be in count and no your computer is not controlled. Have fun!")
+    alert("Manual Instructions: Before you start playing the game you would need +1 player or multiple players of your choice. Make sure you have something to keep in track of the scores. After you choose your player(s) explain how the game works or give a refresher in case they forgot. Show three different figures with your finger showing a: peace sign-scissors, fist-rock, and open hand-paper. Once everyone understood begin the game.)
     
 
      var computerChoices = ["r", "p", "s"];
