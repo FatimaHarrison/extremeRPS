@@ -8,17 +8,19 @@ body{
    }
 
     h1{
-        font-size: 25px;
+        font-size: 20px;
         font-family:'Times New Roman';
         color: white;
     }
 
     h2{
-        font-size: 22px;
+        font-size: 20px;
         font-family:'Times New Roman';
         color: white;
     }
 
     p{
-       font-size: 21px ;
+       font-size: 16px ;
+       font-family:'Times New Roman';
+       color: white;
     }
