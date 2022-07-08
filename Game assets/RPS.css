@@ -4,19 +4,19 @@ body{
     text-align: center;
     padding: 5px;
     border-radius: 25px;
-    background-color:blue;
+    background-image: url("https://i.pinimg.com/originals/6b/9e/e0/6b9ee04fa818867c3a6fd30c0ad61bf8.gif");
    }
 
     h1{
         font-size: 25px;
         font-family:'Times New Roman';
-        color: oldlace;
+        color: white;
     }
 
     h2{
         font-size: 22px;
         font-family:'Times New Roman';
-        color: oldlace;
+        color: white;
     }
 
     p{
