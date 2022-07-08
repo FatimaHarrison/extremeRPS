@@ -19,7 +19,7 @@ body{
         color: white;
     }
 
- .button:hover {
+ .button hover {
     background-color: lightblue;
     color: white;
 }
